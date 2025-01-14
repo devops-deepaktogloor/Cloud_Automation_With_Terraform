@@ -7,6 +7,7 @@ Practice and Project to Automation Infrastructure (IAC) or (IaaS) using Terrafor
 - Install chocolatly on windows (which helps install any software on windows)
 - Install Git & VS Code Editor
 - Install Terraform
+- Install aws CLI
   
   - To Install git
   ```powershell
@@ -25,6 +26,12 @@ Practice and Project to Automation Infrastructure (IAC) or (IaaS) using Terrafor
     choco install -y terraform
   ```
   ![Terraform](https://cdn.hashnode.com/res/hashnode/image/upload/v1643044235298/duS1MkjmN.png)
+
+  - To Install Terraform
+  ```powershell
+    choco install -y awscli
+  ```
+  ![awscli](https://linuxhint.com/wp-content/uploads/2023/12/Picture10-2.png)
   
 # Install Chocolatey for Individual Use:
 
@@ -61,7 +68,8 @@ Practice and Project to Automation Infrastructure (IAC) or (IaaS) using Terrafor
 
 # STEP: 3
 1. Create some files as below. (These below file names are optional)
-  - provider.tf    
-  - main.tf         
-  - inputs.tf
-  - outputs.tf
+    - provider.tf    
+    - main.tf         
+    - inputs.tf
+    - outputs.tf
+

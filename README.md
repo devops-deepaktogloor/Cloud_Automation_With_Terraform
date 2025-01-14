@@ -4,6 +4,18 @@ Practice and Project to Automation Infrastructure (IAC) or (IaaS) using Terrafor
 # Pre-requisite
 - Create AWS free tire account using this link: https://signin.aws.amazon.com/signup?request_type=register
 - Install chocolatly on windows (which helps install any software on windows)
+- Install Git & VS Code Editor
+  - To Install git
+  ```powershell
+    choco install git -y
+  ```
+  ![Chocolatey](https://media.geeksforgeeks.org/wp-content/uploads/20220518201835/Screenshot20220518194605.jpg)
+  
+  - To Install VS Code Editor
+  ```powershell
+    choco install vscode -y
+  ```
+  ![Chocolatey](https://user-images.githubusercontent.com/30314198/53907920-7b31d180-404e-11e9-9926-58f574357639.png)
 # Install Chocolatey for Individual Use:
 
 1. **First**, ensure that you are using an **administrative shell** - you can also install as a non-admin, check out [Non-Administrative Installation](https://community.chocolatey.org/docs/installation#non-administrative-installation).

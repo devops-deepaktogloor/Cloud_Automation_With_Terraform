@@ -27,7 +27,7 @@ Practice and Project to Automation Infrastructure (IAC) or (IaaS) using Terrafor
   ```
   ![Terraform](https://cdn.hashnode.com/res/hashnode/image/upload/v1643044235298/duS1MkjmN.png)
 
-  - To Install Terraform
+  - To Install AWS CLI
   ```powershell
     choco install -y awscli
   ```

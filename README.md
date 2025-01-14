@@ -19,8 +19,8 @@ Practice and Project to Automation Infrastructure (IAC) or (IaaS) using Terrafor
   ```
   ![VSCode](https://user-images.githubusercontent.com/30314198/53907920-7b31d180-404e-11e9-9926-58f574357639.png)
 
-- To Install Terraform
- ```powershell
+  - To Install Terraform
+  ```powershell
     choco install -y terraform
   ```
   ![Terraform](https://cdn.hashnode.com/res/hashnode/image/upload/v1643044235298/duS1MkjmN.png)

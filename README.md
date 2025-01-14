@@ -1,6 +1,7 @@
 # Cloud_Automation_With_Terraform
 Practice and Project to Automation Infrastructure (IAC) or (IaaS) using Terraform &amp; Python
 
+# STEP: 1
 # Pre-requisite
 - Create AWS free tire account using this link: https://signin.aws.amazon.com/signup?request_type=register
 - Install chocolatly on windows (which helps install any software on windows)
@@ -49,3 +50,18 @@ Practice and Project to Automation Infrastructure (IAC) or (IaaS) using Terrafor
 4. **Wait a few seconds for the command to complete.**
 
 5. **If you don't see any errors, you are ready to use Chocolatey!** Type `choco` or `choco -?` now, or see [Getting Started](https://community.chocolatey.org/docs/getting-started) for usage instructions.
+
+# STEP: 2
+1. Create Project Folder (with you desired folder name eg. Terraform_Automation)
+2. Open VS editor code
+3. Open the Folder which you created.
+4. Now go to plugins and add below plugins.
+   - HashiCorp Terraform
+   - Terraform
+
+# STEP: 3
+1. Create some files as below. (These below file names are optional)
+  - provider.tf    
+  - main.tf         
+  - inputs.tf
+  - outputs.tf

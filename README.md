@@ -67,9 +67,55 @@ Practice and Project to Automation Infrastructure (IAC) or (IaaS) using Terrafor
    - Terraform
 
 # STEP: 3
-1. Create some files as below. (These below file names are optional)
+**Create some files as below. (These below file names are optional)**
     - provider.tf    
     - main.tf         
     - inputs.tf
     - outputs.tf
+
+# STEP: 4
+### Create users with administrator privileges in aws and generate access keys
+
+**Creating a Group for Administrators and Setting Up an IAM User**
+
+## To Create a Group for Administrators
+1. Sign in to the AWS Management Console and open the IAM console at [https://console.aws.amazon.com/iam/](https://console.aws.amazon.com/iam/).
+2. In the navigation pane, choose **Groups**, and then choose **Create New Group**.
+3. For **Group Name**, enter a name for your group, such as `Administrators`, and then choose **Next Step**.
+4. In the list of policies, select the check box next to the `AdministratorAccess` policy.  
+   * You can use the **Filter** menu and the **Search** box to filter the list of policies.
+5. Choose **Next Step**, and then choose **Create Group**.
+6. Your new group is listed under **Group Name**.
+
+---
+
+### To Create an IAM User for Yourself, Add It to the Administrators Group, and Create a Password
+1. In the navigation pane, choose **Users**, and then choose **Add user**.
+2. In the **User name** box, enter a user name.
+3. Choose both:
+   - **Programmatic access**
+   - **AWS Management Console access**
+4. Choose **Next: Permissions**.
+5. Select the check box next to the **Administrators** group. Then choose **Next: Review**.
+6. Choose **Create user**.
+
+---
+
+### To Sign In as the New IAM User
+1. Sign out of the AWS Management Console.
+2. Use the following URL format to sign in to the console:
+   https://aws_account_number.signin.aws.amazon.com/console/
+
+Replace `aws_account_number` with your AWS account ID (without any hyphens).  
+For example, if your AWS account ID is `1234-5678-9012`, replace `aws_account_number` with `123456789012`.  
+For information about how to find your account number, see [Your AWS Account ID and Its Alias](https://docs.aws.amazon.com/IAM/latest/UserGuide/console_account_alias.html) in the IAM User Guide.
+3. Enter the IAM user name and password that you just created.
+4. When you're signed in, the navigation bar displays:
+  your_user_name @ your_aws_account_id
+
+---
+### How To Generate Access Key
+1. Go to the AWS management console, click on your Profile name, and then click on My Security Credentials. 
+2. Go to Access Keys and select Create New Access Key
+
 

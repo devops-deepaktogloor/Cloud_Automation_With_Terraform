@@ -31,7 +31,7 @@ Practice and Project to Automation Infrastructure (IAC) or (IaaS) using Terrafor
   ```powershell
     choco install -y awscli
   ```
-  ![awscli](https://linuxhint.com/wp-content/uploads/2023/12/Picture10-2.png)
+  ![awscli](https://hands-on.cloud/wp-content/uploads/2023/02/Install-AWS-CLI-Windows-10-1024x668.png)
   
 # Install Chocolatey for Individual Use:
 

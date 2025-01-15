@@ -151,8 +151,10 @@ terraform init
 
 ## Task : 1 ##
 Create Security Group:
-- [Create Manually](Tasks/SecurityGroup.md)
-- Create Using Terraform
+- Create Manually
+- Create Using Terraform (Refer the same page and scroll down a bit)
+
+## [Next_Topic >](Tasks/SecurityGroup.md) ##
 
 
 

@@ -147,7 +147,12 @@ Read this for more info : [Terraform_Blocks](https://www.geeksforgeeks.org/diffe
 ```powershell
 terraform init
 ```
+# Now Let's Jump into Small tasks to automate and practice
 
+## Task : 1 ##
+Create Security Group:
+- [Create Manually](Tasks\SecurityGroup.md)
+- Create Using Terraform
 
 
 

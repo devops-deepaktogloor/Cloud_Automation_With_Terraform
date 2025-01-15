@@ -53,4 +53,8 @@
     - Select EBS Volumes link from left pane
       ![Console_SecurityGroup](../snaps/EBS_volumes-console-verify.png)
     - Verify all the attributes are correct clicking no the group which is created.
-      ![Console_SecurityGroup_Attributes](../snaps/EBS_volumes-console-verify-moreinfo.png)
+      ![EBS_Attributes](../snaps/EBS_volumes-console-verify-moreinfo.png)
+    - Destroy the EBS Volumes if you wish to by running below command and verify on the console.
+      ![EBS_Destroy](../snaps/EBS_volumes-terraform-destroy.png)
+    - Verify on the console.
+      ![EBS_Destroy](../snaps/EBS_volumes-terraform-destroy-console.png)

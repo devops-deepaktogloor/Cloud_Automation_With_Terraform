@@ -1,4 +1,5 @@
 # Now Let's Jump into Small tasks to automate and practice #
+## Activity:1
 ## Create Security Group using console (Manual) ##
 
 **Note:** Make sure your 'Access Key' & 'Secret Key's are created and activated.
@@ -105,4 +106,4 @@
         ```
         ![Terraform_validate](../snaps/terraform-cmd-destroy.png)
 
-## [Next_Topic > ](Tasks/SecurityGroup.md) ##
+## [Next_Topic > ](../Tasks/EBS(HDD)-valume.md) ##

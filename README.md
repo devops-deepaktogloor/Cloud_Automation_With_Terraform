@@ -108,7 +108,7 @@ Now run the following command:
 1. Go to the AWS management console, click on your Profile name, and then click on My Security Credentials. 
 2. Go to Access Keys and select Create New Access Key
 ---
-## STEP: 5
+## STEP: 5 ##
 ### Configure Credentials from command prompts (CLI) ###
 > To pass the credentials dynamically to void exposing secrate key and token to the other users
 
@@ -118,6 +118,36 @@ Now run the following command:
 aws configure
 ```
   ![AWS_Configure](https://k21academy.com/wp-content/uploads/2021/04/configration-done.png)
+---
+## STEP: 6 ##
+### Terraform Support Scripting Lanaguage ###
+- HashiCorp (HCL) 
+Also be known as DSL (Domain Specific Language)
+
+### Different types of terraform blocks ###
+- Terraform Block
+- Provider Block
+- Data Block
+- Resource Block
+- Module Block
+- Variable Block
+- Output Block
+- Locals Block.
+
+Read this for more info : [Terraform_Blocks](https://www.geeksforgeeks.org/different-types-of-blocks-in-terraform/)
+---
+
+## STEP: 7 ##
+### Create Provider Block using HCL in provider.tf file ###
+
+- Please refer the file [provider.tf](provider.tf)
+
+**This provider block needs to be executed using below command to install all the plug-ins and dependencies related to aws to work on**
+
+```powershell
+terraform init
+```
+
 
 
 

@@ -23,9 +23,9 @@
 
 **Reference Snaps**
 1. Create Security Group from EC2 console
-  - ![Security Group Create from EC2 Console](snaps\EC2-SecurityGropu.png)
-  - ![Add Details](snaps\EC2-SecurityGropuwithinboundrules.png)
-  - ![SucessCreation](snaps\EC2-SecurityGroupcreated.png)
+    ![Security Group Create from EC2 Console](snaps\EC2-01.png)
+    ![Add Details](snaps\EC2-02.png)
+    ![SucessCreation](snaps\EC2-03.png)
 
   
 

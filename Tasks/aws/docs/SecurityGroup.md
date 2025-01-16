@@ -24,11 +24,11 @@
 
 **Reference Snaps**
 1. Create Security Group from EC2 console
-    ![Security Group Create from EC2 Console](../snaps/EC2-01.png)
+    ![Security Group Create from EC2 Console](../../../snaps/EC2-01.png)
 
-    ![Add Details](../snaps/EC2-02.png)
+    ![Add Details](../../../snaps/EC2-02.png)
 
-    ![SucessCreation](../snaps/EC2-03.png)
+    ![SucessCreation](../../../snaps/EC2-03.png)
 
 2. Create Security Group from Terraform AWS CLI
     [ReferenceGuide](https://registry.terraform.io/providers/hashicorp/aws/2.54.0/docs/resources/security_group)
@@ -64,39 +64,39 @@
         ```powershell
         terraform init
         ```
-        ![Terraform_init](../snaps/terraform-cmd-init.png)
+        ![Terraform_init](../../../terraform-cmd-init.png)
     4. Run the below below command to validate .tf file created is not having any error
         ```powershell
         terraform validate
         ```
-        ![Terraform_validate](../snaps/terraform-cmd-validate.png)
+        ![Terraform_validate](../../../snaps/terraform-cmd-validate.png)
     5. Run the below below command to see the plan
         ```powershell
         terraform plan
         ```
-        ![Terraform_validate](../snaps/terraform-cmd-plan.png)
+        ![Terraform_validate](../../../snaps/terraform-cmd-plan.png)
     6. Run the below below command to see the apply, whenever it asks for confirmation provide 'Yes' or if you want to auto approve use -y at the end.
         ```powershell
         terraform apply
         ```
-        ![Terraform_validate](../snaps/terraform-cmd-apply.png)
+        ![Terraform_validate](../../../snaps/terraform-cmd-apply.png)
 
         ## after completion
-        ![Terraform_validate](../snaps/terraform-cmd-apply-completed.png)
+        ![Terraform_validate](../../../snaps/terraform-cmd-apply-completed.png)
     
     7. Finally to see what infrastrcutre provision has been done using terraform use the below command
         ```powershell
         terraform show
         ```
-        ![Terraform_validate](../snaps/terraform-cmd-show.png)
+        ![Terraform_validate](../../../snaps/terraform-cmd-show.png)
 
 
 3. Verify the Security_Group created using terraform on the console.
     - Navigate to EC2 Instance Services
     - Select Security Group link from left pane
-      ![Console_SecurityGroup](../snaps/console-terraform_security-group.png)
+      ![Console_SecurityGroup](../../../snaps/console-terraform_security-group.png)
     - Verify all the attributes are correct clicking no the group which is created.
-      ![Console_SecurityGroup_Attributes](../snaps/console-terraform_security-group-attributes.png)
+      ![Console_SecurityGroup_Attributes](../../../snaps/console-terraform_security-group-attributes.png)
 
 4. Finally delete / destroy the SecurityGroup or Infra that you have provided using below command.
     - *Basically this will delete the .tfstate file content and also delete the SecurityGroup infra which is provisioned on AWS. also helps creating all the details to backfile for reference.*
@@ -104,6 +104,6 @@
         ```powershell
         terraform destroy
         ```
-        ![Terraform_validate](../snaps/terraform-cmd-destroy.png)
+        ![Terraform_validate](../../../snaps/terraform-cmd-destroy.png)
 
-## [Next_Topic > ](../Tasks/aws/docs/EBS(HDD)-valume.md) ##
+## [Next_Topic > ](../../../Tasks/aws/docs/EBS(HDD)-valume.md) ##

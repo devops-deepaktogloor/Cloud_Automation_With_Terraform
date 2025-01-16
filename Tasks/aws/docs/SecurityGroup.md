@@ -106,4 +106,4 @@
         ```
         ![Terraform_validate](../snaps/terraform-cmd-destroy.png)
 
-## [Next_Topic > ](../Tasks/EBS(HDD)-valume.md) ##
+## [Next_Topic > ](../Tasks/aws/docs/EBS(HDD)-valume.md) ##

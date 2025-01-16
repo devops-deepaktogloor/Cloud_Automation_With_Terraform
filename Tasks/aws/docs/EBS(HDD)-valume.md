@@ -59,4 +59,4 @@
     - Verify on the console.
       ![EBS_Destroy](../snaps/EBS_volumes-terraform-destroy-console.png)
 
-## [Next_Topic > ](../Tasks/EC2_Instance(VMs).md) ##
+## [Next_Topic > ](../Tasks/aws/docs/EC2_Instance(VMs).md) ##

@@ -13,23 +13,23 @@
 5. Click on Launch Instance
    ![SelectRegion](../snaps/Manual-EC2-VM-RegionSelection.png)
 6. Provide below details based on requirement
-    1. Name and tags  Info
-    2. Application and OS Images (Amazon Machine Image)  Info
-       ![SelectRegion](../snaps/Manual-EC2-VM-Name,Tag,Os.png)
-    3. Instance type  Info | Get advice
-    4. Key pair (login)  Info
-       ![SelectRegion](../snaps/Manual-EC2-VM-InstanceType,Key-Pair.png)
-    5. Network settings  Info (*Leaving As Is*)
-       ![SelectRegion](../snaps/Manual-EC2-VM-networksettings.png)
-    6. Configure storage  Info (*Leaving As Is*)
-       ![SelectRegion](../snaps/Manual-EC2-VM-configureStorage.png)
-    7. Advanced details  Info (*Leaving As Is*)
-    8. Click On Launch Button
-       ![SelectRegion](../snaps/Manual-EC2-VM-advanceSettings.png)
-    9. It will begin Launching Instance 
-       ![LaunchingInstance](../snaps/Manual-EC2-VM-lanunchingInstance.png)
+    1.  Name and tags  Info
+    2.  Application and OS Images (Amazon Machine Image)  Info
+        ![SelectRegion](../snaps/Manual-EC2-VM-Name,Tag,Os.png)
+    3.  Instance type  Info | Get advice
+    4.  Key pair (login)  Info
+        ![SelectRegion](../snaps/Manual-EC2-VM-InstanceType,Key-Pair.png)
+    5.  Network settings  Info (*Leaving As Is*)
+        ![SelectRegion](../snaps/Manual-EC2-VM-networksettings.png)
+    6.  Configure storage  Info (*Leaving As Is*)
+        ![SelectRegion](../snaps/Manual-EC2-VM-configureStorage.png)
+    7.  Advanced details  Info (*Leaving As Is*)
+    8.  Click On Launch Button
+        ![SelectRegion](../snaps/Manual-EC2-VM-advanceSettings.png)
+    9.  It will begin Launching Instance 
+        ![LaunchingInstance](../snaps/Manual-EC2-VM-lanunchingInstance.png)
     10. Instance Sucess Message will appear
-       ![Sucess](../snaps/Manual-EC2-VM-lanunchingInstanceSucess.png)
+        ![Sucess](../snaps/Manual-EC2-VM-lanunchingInstanceSucess.png)
     11. Initialization Process starts
         ![Initilization](../snaps/Manual-EC2-VM-lanunchingInstanceSucess-Initializing.png)
     12. Within Few Seconds Instance will be active and running

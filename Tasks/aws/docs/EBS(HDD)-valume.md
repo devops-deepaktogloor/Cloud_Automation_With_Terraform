@@ -8,13 +8,13 @@
     - Navigate to EC2 Services from the console
     - Click on EBS Volume from the left pane
     - Click on create button
-      ![Reference](../snaps/EBS_volumes.png)
+      ![Reference](../../../snaps/EBS_volumes.png)
     - Select the volumes type and size (other parameters too if you needed, not required otherwise)
-      ![Reference](../snaps/EBS_volumes-type-size.png)
+      ![Reference](../../../snaps/EBS_volumes-type-size.png)
     - Click on Create Button to create the EBS Volume (*it will take fracations of seconds to be active*)
-      ![Reference](../snaps/EBS_volumes-type-size-created.png)
+      ![Reference](../../../snaps/EBS_volumes-type-size-created.png)
     - Click on the Volume ID to see more details respective to the Volume created
-      ![Reference](../snaps/EBS_volumes-type-size-created-moreinfo.png)
+      ![Reference](../../../snaps/EBS_volumes-type-size-created-moreinfo.png)
 
 ## Create EBS Volume (Hard Disk) (Terraform) ##
 ## *Note: * At a time terraform supports only 1 source, hence kindly comment out the previouly created resource using /* with code */##
@@ -36,27 +36,27 @@
       ```powershell
       terraform validate
       ```
-      ![Reference](../snaps/EBS_volumes-tf-validate.png)
+      ![Reference](../../../snaps/EBS_volumes-tf-validate.png)
     - Create plan of resource you are going to create
       ```powershell
       terraform plan
       ```
-      ![Reference](../snaps/EBS_volumes-tf-plan.png)
+      ![Reference](../../../snaps/EBS_volumes-tf-plan.png)
     - If resource you are going to create are correct then simply apply command
       ```powershell
       terraform apply
       ```
-      ![Reference](../snaps/EBS_volumes-tf-apply.png)
+      ![Reference](../../../snaps/EBS_volumes-tf-apply.png)
 
 3. Verify the EBS (Elastic Block Store) created using terraform, on the console.
     - Navigate to EC2 Instance Services
     - Select EBS Volumes link from left pane
-      ![Console_SecurityGroup](../snaps/EBS_volumes-console-verify.png)
+      ![Console_SecurityGroup](../../../snaps/EBS_volumes-console-verify.png)
     - Verify all the attributes are correct clicking no the group which is created.
-      ![EBS_Attributes](../snaps/EBS_volumes-console-verify-moreinfo.png)
+      ![EBS_Attributes](../../../snaps/EBS_volumes-console-verify-moreinfo.png)
     - Destroy the EBS Volumes if you wish to by running below command and verify on the console.
-      ![EBS_Destroy](../snaps/EBS_volumes-terraform-destroy.png)
+      ![EBS_Destroy](../../../snaps/EBS_volumes-terraform-destroy.png)
     - Verify on the console.
-      ![EBS_Destroy](../snaps/EBS_volumes-terraform-destroy-console.png)
+      ![EBS_Destroy](../../../snaps/EBS_volumes-terraform-destroy-console.png)
 
-## [Next_Topic > ](../Tasks/aws/docs/EC2_Instance(VMs).md) ##
+## [Next_Topic > ](../../../Tasks/aws/docs/EC2_Instance(VMs).md) ##

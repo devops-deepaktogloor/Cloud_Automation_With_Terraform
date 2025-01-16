@@ -78,3 +78,32 @@
 6.  Now Go back to the new tab where IP address is pasted, Just refresh the page to see Apache2 Server WELCOME page.
     ![WelcomeApachePage](../snaps/Manual-EC2-VM-apachewelcome.png)
 
+## Create EC2 Instances Simple (VMs) (Using Terraform) ##
+1.  Create new EC2Instances.tf file and copy paste below code snippet in the file and save.
+    ```
+    resource "aws_instance" "console" {
+    ami           = "ami-04b4f1a9cf54c11d0" # us-east-2
+    instance_type = "t2.micro"
+    associate_public_ip_address = true
+    key_name = "aws-key"
+    vpc_security_group_ids = ["sg-0e31938198780cea8"]
+    tags = {
+        key_name = "EC2InstanceTerraform"
+    }
+    }
+    ```
+2.  Run the validate the tf file
+    ![validate](../snaps/Manual-EC2-VM-terraform-simpleInstance.png)
+3.  Run the plan
+    ![plan](../snaps/Manual-EC2-VM-terraform-simpleInstance1.png)
+4.  Run apply 
+    ![apply](../snaps/Manual-EC2-VM-terraform-simpleInstance2.png)
+5.  Verify on the console VM is initilized
+    ![console](../snaps/Manual-EC2-VM-terraform-simpleInstance3.png)
+6.  Verify more info clicking on instance id
+    ![moreifo](../snaps/Manual-EC2-VM-terraform-simpleInstance4.png)
+7.  Destroy the instance 
+    ![destroy](../snaps/Manual-EC2-VM-terraform-simpleInstance5.png)
+8.  Verify on console vm is terminated 
+    ![destroy](../snaps/Manual-EC2-VM-terraform-simpleInstance6.png)
+

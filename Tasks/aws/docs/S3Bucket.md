@@ -85,4 +85,4 @@
     ![oldbuckets](../../../snaps/S3-newbucket-filevarification.png)
         
 
-
+## [Next_Topic > ](../../../Tasks/aws/StaticWebSite/static_web.md) ##

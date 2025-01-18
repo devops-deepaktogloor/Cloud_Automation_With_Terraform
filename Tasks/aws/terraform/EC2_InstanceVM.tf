@@ -1,4 +1,4 @@
-resource "aws_instance" "console" {
+/*resource "aws_instance" "console" {
   ami           = "ami-04b4f1a9cf54c11d0" # us-east-2
   instance_type = "t2.micro"
   associate_public_ip_address = true
@@ -7,4 +7,4 @@ resource "aws_instance" "console" {
   tags = {
     key_name = "EC2InstanceTerraform"
   }
-}
+}*/

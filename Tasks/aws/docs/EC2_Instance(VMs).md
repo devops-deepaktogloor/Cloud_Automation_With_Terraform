@@ -4,7 +4,7 @@
 
 **Note:** Make sure your 'Access Key' & 'Secret Key's are created and activated.
 
-## Via CLI ###
+## Via Console ###
 
 1. Login to Console
 2. Search for EC2 Instance service
@@ -107,3 +107,4 @@
 8.  Verify on console vm is terminated 
     ![destroy](../../../snaps/Manual-EC2-VM-terraform-simpleInstance6.png)
 
+## [Next_Topic > ](../../../Tasks/aws/docs/S3Bucket.md) ##

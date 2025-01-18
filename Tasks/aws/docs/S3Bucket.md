@@ -49,4 +49,40 @@
     ![applay](../../../snaps/S3-cli-apply.png)
 3.  Go back to the bucket and refresh to see file uploaded
     ![fileuploaded](../../../snaps/S3-cli-resource_object-fileuploaded.png)
-    
+
+## Activity:5
+## Let's see how to use RANDOM provider to get rid of HardCoding the values in tf file ##
+1.  In a provider.tf underneath of aws provider section add random provider shown below.
+    ```powershell
+        random = {
+        source  = "hashicorp/random"
+        version = "3.6.3"
+        }
+    ```
+    ![randomprovider](../../../snaps/S3-tf_provider.tf.png)
+2.  Now go to the source file.tf and add source random shown below.
+    ```powershell
+        resource "random_id" "rand_id" {
+        byte_length = 8
+        }
+
+        resource "aws_s3_bucket" "S3demo-bucket" {
+            bucket = "demo-bucket-${random_id.rand_id.hex}"
+        }
+    ```
+    ![generalize](../../../snaps/S3-tf_provider.tf_use_randomprovider.png)
+3.  Now Run the terraform apply command to create and upload file in to newly created bucket.
+    ### Old Buckets ###
+    ![oldbuckets](../../../snaps/S3-old_buckets.png)
+
+    Run Terraform apply command and see
+    ![oldbuckets](../../../snaps/S3-old_buckets-apply.png)
+
+    ### new Buckets with hardcoded value###
+    ![oldbuckets](../../../snaps/S3-newbucket-hardcodedvalue.png)
+
+    ### new Buckets with hardcoded value file varification ###
+    ![oldbuckets](../../../snaps/S3-newbucket-filevarification.png)
+        
+
+

@@ -47,3 +47,13 @@ resource "aws_route_table_association" "pub-sub" {
   route_table_id = aws_route_table.my-rt.id
   subnet_id      = aws_subnet.my-pub-sub.id
 }
+
+resource "aws_instance" "my-vpc-instance" { 
+    ami = "ami-04b4f1a9cf54c11d0"
+    instance_type = "t2.micro"
+    subnet_id = aws_subnet.my-pub-sub.id
+    tags = {
+      key = "MyVPCBox"
+    }
+  
+}

@@ -214,6 +214,25 @@ Step:7
     ![internetgateway](../../../snaps/vpc-igw.png)
     ### Resource Map
     ![map](../../../snaps/vpc_resource_map.png)
+10. Create EC2 Instance within our VPC created (either it could public / private subnet, it;s your wish)
+    ```powershell
+    resource "aws_instance" "my-vpc-instance" { 
+        ami = "ami-04b4f1a9cf54c11d0"
+        instance_type = "t2.micro"
+        subnet_id = aws_subnet.my-pub-sub.id
+        tags = {
+        key = "MyVPCBox"
+        }
+    }
+    ```
+    * For demo all instances are been deleted when command run through terraform apply instance should be created.
+      * Before terraform apply
+      ![noinstances](../../../snaps/no-instances.png)
+      * Terraform applay
+      ![applytocreateinstances](../../../snaps/instances.Createdpng.png)
+      * Verify Instance is now up and running
+      ![up&running](../../../snaps/up&running.png)
+      
 
 
 

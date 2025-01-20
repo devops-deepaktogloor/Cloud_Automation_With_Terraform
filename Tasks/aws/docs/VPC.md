@@ -132,6 +132,90 @@ Step:6
 
 ![ResourceMap](../../../snaps/VPC_Subnets_Route_tables_networkConnections.png)
 
+Step:7
+* Let's create one instance under VPC subnet
+1.  Login to console 
+2.  Goto EC2 Instance and Create 1 instance
+3.  Keep all the default settings as is and just edit the vpc settings and select your desired one.
+    ![pvcEC2Instance](../../../snaps/launchPVCInstance.png)
+4.  EC2 Instances is created sucessfully with name *my-webserver*
+    ![webserver](../../../snaps/my-webserver.png)
+5.  Click on the Instance created to see more info about only private IP is assigned.
+    ![Ipv4](../../../snaps/IPv4Private.png)
+
+
+## VPC Creation using Terraform on AWS cloud ##
+1.  Create a pvc with CIDR block
+    ```powershell
+    resource "aws_vpc" "my-vpc" {
+        cidr_block = "10.0.0.0/16"
+        tags = {
+            name = "my_vpc"
+        }
+    }
+    ```
+2.  Create Private Subnet
+    ```powershell
+    resource "aws_subnet" "my-pri-sub" {
+        cidr_block = "10.0.1.0/24"
+        vpc_id = aws_vpc.my-vpc.id
+    }
+    ```
+3.  Create Public Subnet
+    ```powershell
+    resource "aws_subnet" "my-pub-sub" {
+        cidr_block = "10.0.2.0/24"
+        vpc_id = aws_vpc.my-vpc.id
+        tags = {
+            name = "public-subnet"
+        }
+    }
+    ```
+4.  Create Internet Gateway
+    ```powershell
+    resource "aws_internet_gateway" "my-igw" {
+        vpc_id = aws_vpc.my-vpc.id
+        tags = {
+            name = "my-igw"
+        }
+    }
+    ```
+5.  Create Routing Table
+    ```powershell
+    resource "aws_route" "my-rt" {
+        vpc_id = aws_vpc.my_vpc.vpc_id
+
+        route {
+            cidr_block = "0.0.0.0/0"
+            gateway_id = aws_internet_gateway.my-igw.id
+        }
+    }
+    ```
+6.  Associate the route table
+    ```powershell
+    resource "aws_route_table_association" "pub-sub" {
+       route_table_id = aws_route.my-rt.id
+        subnet_id = aws_subnet.my-pub-sub.id
+    }
+    ```
+7.  Validate Terraform and Apply if succeeds.
+    ![validate](../../../snaps/terraform-validateForVPC.png)
+
+    Just for demo purpose i have deleted manually created vpc and kept the defaul one.
+    ![default](../../../snaps/no_vpc-default.png)
+8.  Now Terraform apply and refresh the PVC page to see PVC created and all the mappings showed in manual steps above.
+    ![tfapply](../../../snaps/vpc_tf_apply-completed.png)
+9.  Goto Console and validate VPC, Subnets, Internet Gateway, Route Tables are created.
+    ### VPC & Subnets
+    ![vpc&Subnets](../../../snaps/vpc-subnets.png)
+    ### Routes & Associated Subnets
+    ![routes&subnets](../../../snaps/vpc-routes-assosubnets.png)
+    ### VPC Internet Gateway
+    ![internetgateway](../../../snaps/vpc-igw.png)
+    ### Resource Map
+    ![map](../../../snaps/vpc_resource_map.png)
+
+
 
 
 

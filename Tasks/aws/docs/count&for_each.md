@@ -1,4 +1,4 @@
-# Multiple Resource using Count, for_each
+# Multiple Resource using Count
 Scenario:
 Let's create 2 subnet marks namely 
 - subnet 1 with ip range (10.0.0.0/24)
@@ -123,3 +123,5 @@ resource "aws_instance" "main" {
 }
 ```
 ![4instances](../../../snaps/instance4.png)
+
+## [Next_Topic > ](../../../Tasks/aws/docs/modules.md) ##

@@ -61,4 +61,4 @@ module "ec2-instance" {
   }
 }
 ```
-
+## [Create Own Module (next topic >>)](../../aws/docs/own_modules.md)
